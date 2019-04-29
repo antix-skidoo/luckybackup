@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export QT_SELECT=qt5
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/luckybackup-data install_documentation install_translations
+	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/luckybackup install_target install_menu install_pixmap
+	rm -f $(CURDIR)/debian/luckybackup/usr/share/man/man8/luckybackup.8.gz
+
+override_dh_installchangelogs:
+	dh_installchangelogs readme/changelog

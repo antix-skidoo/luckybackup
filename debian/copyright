@@ -1,0 +1,38 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: 2008-2014, Loukas Avgeriou
+License: GPL-3+
+
+Files: src/RsyncDirModel.cpp
+  src/RsyncDirModel.h
+  src/RsyncDirModel_p.cpp
+  src/RsyncDirModel_p.h
+Copyright: VCreate Logic Private Limited, Bangalore
+License: GPL-3+
+
+Files: src/calcDiffThread.cpp
+Copyright: 2008-2012, Loukas Avgeriou
+License: GPL-3+
+
+Files: src/qdirdialog.cpp
+  src/qdirdialog.h
+Copyright: 2002-2004, The Board of Trustees of the Leland Stanford Junior
+License: GPL-2
+
+License: GPL-2
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 dated June, 1991.
+ .
+ On Debian systems, the complete text of version 2 of the GNU General
+ Public License can be found in '/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 3 dated June, 2007, or (at
+ your option) any later version.
+ .
+ On Debian systems, the complete text of version 3 of the GNU General
+ Public License can be found in '/usr/share/common-licenses/GPL-3'.

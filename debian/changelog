@@ -1,0 +1,231 @@
+luckybackup (0.5.0-3~ski) unstable; urgency=medium
+
+  * removed from the "About" dialog an outdated// statement "(using Qt4)"
+  * suppressed display of TrayMessage, aka baloon(sic) popup notications
+  * "About" dialog: removed embedded hyperlinks
+  * "About" dialog: clarified the license declaration (gpl v3)
+  * updated the outdated (0.4.9) AppVersionString
+
+ -- skidoo <email@redact.ed>  Mon, 29 Apr 2019 10:10:10 +0100
+
+luckybackup (0.5.0-2) unstable; urgency=medium
+
+  * Install luckybackup-pkexec binary.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Fri, 09 Nov 2018 10:23:47 +0100
+
+luckybackup (0.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.2.1.
+  * Bump debian/compat to level 11.
+  * Move source lintian-overrides to new directory.
+  * Fix renamed lintian tag.
+  * Overwrite false positive spelling-error-in-binary warning.
+  * Remove desktop file for non existent binary.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 08 Nov 2018 11:54:42 +0100
+
+luckybackup (0.4.9-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Added Qt5 support.
+      Closes: #875045
+    - Rewrite patch 04-spelling-errors.
+    - Drop merged patch 01-spelling-error.
+    - Drop merged patch 02-desktop-keywords.
+    - Drop merged patch 03-spelling-errors.
+    - Drop merged patch 04-spelling-errors.
+  * Bump Standards-Version to 4.1.1 (no changes required).
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Tue, 07 Nov 2017 09:22:37 +0100
+
+luckybackup (0.4.8-4) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.0.0 (no changes required).
+  * Bump debian/compat to level 10.
+  * Add patch 04-spelling-errors.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 27 Jul 2017 16:29:30 +0200
+
+luckybackup (0.4.8-3) unstable; urgency=medium
+
+  * Drop obsolete menu file from package.
+  * Bump Standards-Version to 3.9.8 (no changes required).
+  * Enable full hardening.
+  * Add patch 03-spelling-errors to fix spelling errors.
+  * Drop dependency on menu.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Wed, 04 May 2016 15:55:02 +0200
+
+luckybackup (0.4.8-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.6 (no changes needed).
+  * Update to DEP5 debian/copyright format.
+  * Drop deprecated hardening-wrapper.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Tue, 04 Aug 2015 19:16:28 +0200
+
+luckybackup (0.4.8-1) unstable; urgency=low
+
+  * New upstream release.
+    - Drop merged patch 01-include-state.
+  * Bump Standards-Version to 3.9.5 (no changes needed).
+  * Don't explicitly request xz compression - dpkg 1.17 does this by default.
+  * Override debian-watch-may-check-gpg-signature warning. Upstream does not
+    provide GPG signatures.
+  * Add patch 01-spelling-error to fix a spelling error.
+  * Add patch 02-desktop-keywords to add desktop keywords.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Wed, 26 Mar 2014 10:04:06 +0100
+
+luckybackup (0.4.7-3) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.4 (no changes needed).
+  * Switch to xz compression and add a Pre-Depends on dpkg.
+  * Bump debian/compat level to 9.
+  * Migrate package to minimal debhelper.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Wed, 29 May 2013 10:20:34 +0200
+
+luckybackup (0.4.7-2) unstable; urgency=low
+
+  * Add upstream patch 01-include-state to fix not updated "include" states, if
+    the task was not selected.
+    Closes: #694298
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Fri, 07 Dec 2012 15:51:11 +0100
+
+luckybackup (0.4.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Wed, 14 Mar 2012 22:52:13 +0100
+
+luckybackup (0.4.6-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.3 (no changes needed).
+  * Wrap all debian/control fields.
+  * Add doc-base registration for the luckybackup-data package.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Fri, 24 Feb 2012 20:04:17 +0100
+
+luckybackup (0.4.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Depend on menu.
+    Closes: #631442
+  * Add build-arch and build-indep debian/rules target.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sat, 25 Jun 2011 14:02:33 +0200
+
+luckybackup (0.4.5-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.2 (no changes needed).
+  * Build with hardening-wrapper.
+  * Wrap build dependencies.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sat, 30 Apr 2011 16:34:36 +0200
+
+luckybackup (0.4.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 10 Mar 2011 20:33:21 +0100
+
+luckybackup (0.4.4-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sun, 06 Feb 2011 20:52:37 +0100
+
+luckybackup (0.4.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Mon, 01 Nov 2010 12:04:07 +0100
+
+luckybackup (0.4.3-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sun, 05 Sep 2010 20:27:13 +0200
+
+luckybackup (0.4.2-1) experimental; urgency=low
+
+  * New upstream release.
+    - Removed merged patch 01-fix-menu-name.diff.
+  * Bump Standards-Version to 3.9.1 (no changes needed).
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sun, 29 Aug 2010 21:20:11 +0200
+
+luckybackup (0.4.1-3) unstable; urgency=low
+
+  * Realy fix #588584 with the patch 01-fix-menu-name.diff from Bernhard.
+    Install again the removed desktop file.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sun, 22 Aug 2010 13:14:31 +0200
+
+luckybackup (0.4.1-2) unstable; urgency=low
+
+  * Remove redundant desktop file.
+    Closes: #588584
+  * Bump Standards-Version to 3.9.0 (no changes needed).
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sun, 11 Jul 2010 15:05:54 +0200
+
+luckybackup (0.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Fri, 18 Jun 2010 10:38:29 +0200
+
+luckybackup (0.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - Drop all patches, they are merged by upstream.
+  * Bump Standards-Version to 3.8.4 (no changes needed).
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Tue, 18 May 2010 18:15:47 +0200
+
+luckybackup (0.3.5-1) unstable; urgency=low
+
+  * New upstream release.
+    Closes: #562559
+    - Add 01-fix-man-error.diff to fix a formating error in the manpage.
+  * Bump Standards-Version to 3.8.3 (no changes needed).
+  * Convert package to the 3.0 (quilt) format.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Sat, 26 Dec 2009 12:10:54 +0100
+
+luckybackup (0.3.3-1) unstable; urgency=low
+
+  * New upstream release.
+    - The upstream changelog path has been changed again.
+  * Bump Standards-Version to 3.8.2 (no changes needed).
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 09 Jul 2009 16:05:37 +0200
+
+luckybackup (0.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+    - We do not need to delete the extra license file anymore.
+  * The changelog location has been changed again to the old path.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Fri, 29 May 2009 18:37:19 +0200
+
+luckybackup (0.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - The location of the upstream changelog has been changed.
+    - Drop 02-use-su-to-root.dpatch, it has been merged by upstream.
+    - Drop 01-fix-hypen-escaping.dpatch, it has been merged by upstream.
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 28 May 2009 19:34:46 +0200
+
+luckybackup (0.3-1) unstable; urgency=low
+
+  * Initial release.
+    Closes: #529814
+
+ -- Patrick Matthäi <pmatthaei@debian.org>  Thu, 21 May 2009 20:09:36 +0200

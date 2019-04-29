@@ -1,0 +1,44 @@
+Source: luckybackup
+Section: utils
+Priority: optional
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Homepage: http://luckybackup.sourceforge.net/
+Standards-Version: 4.2.1
+Build-Depends: debhelper (>= 11),
+ qtbase5-dev,
+ qtbase5-dev-tools,
+ qt5-qmake
+
+Package: luckybackup
+Architecture: any
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ luckybackup-data (= ${source:Version}),
+ rsync
+Description: rsync-based GUI data backup utility
+ luckyBackup is an application that backs-up and/or synchronizes any
+ directories with the power of rsync.
+ Its main features are: backup, safety, synchronization, exclude/only include
+ options, allows custom rsync options, remote connections, restore and dry-run
+ operations, scheduling, profiles and command line mode.
+ .
+ It is simple to use, fast (transfers over only changes made and not all data),
+ safe (keeps your data safe by checking all declared directories before
+ proceeding in any data manipulation ), reliable and fully customizable.
+
+Package: luckybackup-data
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: luckybackup
+Description: rsync-based GUI data backup utility (data files)
+ luckyBackup is an application that backs-up and/or synchronizes any
+ directories with the power of rsync.
+ Its main features are: backup, safety, synchronization, exclude/only include
+ options, allows custom rsync options, remote connections, restore and dry-run
+ operations, scheduling, profiles and command line mode.
+ .
+ It is simple to use, fast (transfers over only changes made and not all data),
+ safe (keeps your data safe by checking all declared directories before
+ proceeding in any data manipulation ), reliable and fully customizable.
+ .
+ This package contains the arch independent data files.
